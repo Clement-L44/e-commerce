@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let product of products">
+      {{product.name}} ({{product.brand}}) : {{product.nb}} &#160; <button (click)="addCartProduct(product._id)"> + </button> <button (click)="removeCartProduct(product._id)"> - </button>
+  </li>
+</ul>
+<span id="total"> Total = {{total}} </span>
+<br/><br/>
+<button (click)="cartValidation()"> Validation </button>
+<button (click)="cartReset()"> Réinitialisation / Reset </button>

@@ -1,0 +1,29 @@
+
+<h1>Online Sales (first step)</h1>
+
+<router-outlet name ="login"></router-outlet>
+<br/><br/>
+<a [routerLink]="['/test']">test</a>
+<br/><br/>
+
+<table>
+  <tr>
+     <td> <span class="title"> Ventes en ligne / Online sales </span> </td>
+     <td> <app-auth></app-auth> </td>
+  </tr>
+  <tr>
+     <td class="left"> <app-research></app-research> </td>
+     <td> <app-cart></app-cart> </td>
+  </tr>
+  <tr>
+     <td colspan="2">
+          <router-outlet name="display"></router-outlet>
+     </td>
+  </tr>
+  <tr> <!-- not used -->
+     <td colspan="2"> <router-outlet></router-outlet> </td>
+  </tr>
+</table>
+
+
+

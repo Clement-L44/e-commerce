@@ -1,0 +1,5 @@
+table { width: 100%; height: 100%; }
+td    { vertical-align: top; font-size: 16pt; }
+td.left { width: 50%; }
+.title { font-size: 18pt; font-weight: bold; font-style: italic; color: red; }
+
